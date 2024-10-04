@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* General table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style for table headers */
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2; /* Light gray background for table headers */
+}
+
+/* Style for odd table rows */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Light gray background for odd rows */
+}
+
+/* Style for even table rows */
+tbody tr:nth-child(even) {
+  background-color: #e0e0e0; /* Slightly darker gray background for even rows */
+}
+
+/* Style for table header */
+thead tr {
+  background-color: #d9d9d9; /* Slightly darker gray background for header */
+}
