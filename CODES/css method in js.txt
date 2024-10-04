@@ -1,0 +1,21 @@
+import React from 'react';
+import './App.css';
+
+
+function App() {
+  const styling = {
+    color:"blue",
+    backgroundColor:"yellow",
+    opacity:0.5,
+  }
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1 style={styling}>My Beautiful Image Slider</h1>
+    
+      </header>
+    </div>
+  );
+}
+
+export default App;

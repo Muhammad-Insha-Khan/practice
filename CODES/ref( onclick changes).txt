@@ -1,0 +1,33 @@
+import React, { Component, createRef } from 'react';
+import './App.css';
+
+
+class App extends Component{
+  constructor(){
+    super();
+    this.Inputis = createRef();
+  }
+    Handleclick =()=>{
+    
+    this.Inputis.current.style.color = 'red';
+    this.Inputis.current.focus();
+    
+   }
+  render(){
+    console.log(this.Inputis);
+  return (
+  
+   
+      <div className="App-header">
+        <input type="text" id="name" ref={this.Inputis}/>
+        <button onClick={this.Handleclick}>click me</button>
+        
+
+        </div>
+  
+  
+   
+  );
+}
+}
+export default App;

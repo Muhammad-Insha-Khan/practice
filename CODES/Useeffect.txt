@@ -1,0 +1,16 @@
+import React, {useEffect} from "react";
+
+function App (){
+   
+  useEffect(()=>{
+    alert("useeffect");
+    console.log("useeffect");
+  });
+  return (
+    <div> LIFE CYCLE CONSTRUCTOR   </div>
+  )
+}
+
+export default App
+
+  

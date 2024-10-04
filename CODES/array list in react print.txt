@@ -1,0 +1,23 @@
+import React from 'react'
+
+function Userlist() {
+    const users = [
+        { id: 1, name: "Alice" , age:15 },
+        { id: 2, name: "Bob" , age: 20 }
+      ];
+  return (
+    <>   
+     <h1>User List</h1>
+      <ul>
+       {users.map((users)=>(
+        <li key={users.id}> <h1>{users.id} {users.name} {users.age}id</h1></li>
+       
+       ))}
+      </ul>
+    </>
+
+  )
+
+}
+
+export default Userlist

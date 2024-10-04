@@ -1,0 +1,31 @@
+props class:
+import React from 'react'
+
+export function Usercardprops(props) {
+   
+  return (
+    <div>
+    <h1>name : {props.name}</h1>
+    </div>
+  )
+}
+
+-----------------------------------------
+
+import './App.css';
+import { Usercardprops } from './Usercardprops';
+
+// import React, {useState} from 'react';
+
+  
+function App() {
+  
+
+ return (
+    <div>
+        <Usercardprops name="insha khan"></Usercardprops>
+    </div>
+    ); 
+  };
+
+  export default App

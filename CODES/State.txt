@@ -1,0 +1,27 @@
+import './App.css';
+
+import React, {useState} from 'react';
+
+ 
+
+  
+function App() {
+  let [data,setState] = useState("insha khan"); ; 
+  const  Perform =  () => {
+          setState("name changed");
+         
+  }
+
+ return (
+    <div>
+      <h1>form</h1>
+      <h1>{data}</h1>
+      <button onClick={Perform}>click me</button>
+      
+    </div>
+    ); 
+  };
+
+  export default App
+
+
